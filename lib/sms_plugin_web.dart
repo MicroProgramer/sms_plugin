@@ -46,7 +46,7 @@ class SmsAdvancedPlugin extends PlatformInterface {
       default:
         throw PlatformException(
           code: 'Unimplemented',
-          details: 'sms_plugin for web doesn\'t implement \'${call.method}\'',
+          details: 'sms_plugin_mp for web doesn\'t implement \'${call.method}\'',
         );
     }
   }

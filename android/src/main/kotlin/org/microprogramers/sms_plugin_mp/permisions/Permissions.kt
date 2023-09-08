@@ -1,4 +1,4 @@
-package org.microprogramers.sms_plugin.permisions
+package org.microprogramers.sms_plugin_mp.permisions
 
 import android.content.Context
 import android.content.pm.PackageManager

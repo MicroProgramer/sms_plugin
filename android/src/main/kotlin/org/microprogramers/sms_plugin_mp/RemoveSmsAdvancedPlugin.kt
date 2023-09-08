@@ -1,8 +1,8 @@
-package org.microprogramers.sms_plugin
+package org.microprogramers.sms_plugin_mp
 //
 //import androidx.annotation.NonNull
-//import org.microprogramers.sms_plugin.permisions.Permissions
-//import org.microprogramers.sms_plugin.status.SmsStateHandler
+//import org.microprogramers.sms_plugin_mp.permisions.Permissions
+//import org.microprogramers.sms_plugin_mp.status.SmsStateHandler
 //
 //import io.flutter.embedding.engine.plugins.FlutterPlugin
 //import io.flutter.plugin.common.*
@@ -18,7 +18,7 @@ package org.microprogramers.sms_plugin
 //private const val CHANNEL_QUER_CONT_PHOTO = "plugins.microprogramers.org/queryContactPhoto"
 //private const val CHANNEL_USER_PROFILE = "plugins.microprogramers.org/userProfile"
 //private const val CHANNEL_SIM_CARDS = "plugins.microprogramers.org/simCards"
-//private const val CHANNEL_REMOVE = "elyudde.sms.remove.channel"
+//private const val CHANNEL_REMOVE = "microprogramers.sms.remove.channel"
 //
 ///** SmsAdvancedPlugin */
 //class RemoveSmsAdvancedPlugin {

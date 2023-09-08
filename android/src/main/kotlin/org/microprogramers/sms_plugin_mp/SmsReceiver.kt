@@ -1,4 +1,4 @@
-package org.microprogramers.sms_plugin
+package org.microprogramers.sms_plugin_mp
 
 import android.Manifest
 import android.annotation.TargetApi
@@ -12,7 +12,7 @@ import android.provider.Telephony
 import android.telephony.SmsManager
 import android.telephony.SmsMessage
 import android.util.Log
-import org.microprogramers.sms_plugin.permisions.Permissions
+import org.microprogramers.sms_plugin_mp.permisions.Permissions
 import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
 import io.flutter.plugin.common.EventChannel

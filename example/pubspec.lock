@@ -133,7 +133,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
-  sms_plugin:
+  sms_plugin_mp:
     dependency: "direct main"
     description:
       path: ".."

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sms_plugin/sms_plugin.dart';
+import 'package:sms_plugin_mp/sms_plugin.dart';
 
 void main() {
   runApp(const MyApp());

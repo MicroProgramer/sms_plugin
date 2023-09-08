@@ -1,4 +1,4 @@
-package org.microprogramers.sms_plugin
+package org.microprogramers.sms_plugin_mp
 
 import android.content.ContentResolver
 import android.content.Context

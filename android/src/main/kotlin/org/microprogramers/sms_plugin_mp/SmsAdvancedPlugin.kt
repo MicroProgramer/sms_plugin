@@ -1,9 +1,9 @@
-package org.microprogramers.sms_plugin
+package org.microprogramers.sms_plugin_mp
 
 import android.content.Context
 import androidx.annotation.NonNull
-import org.microprogramers.sms_plugin.permisions.Permissions
-import org.microprogramers.sms_plugin.status.SmsStateHandler
+import org.microprogramers.sms_plugin_mp.permisions.Permissions
+import org.microprogramers.sms_plugin_mp.status.SmsStateHandler
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
@@ -38,7 +38,7 @@ class SmsAdvancedPlugin() : FlutterPlugin, ActivityAware {
 
     this.sendSmsChannel = MethodChannel(flutterPluginBinding.binaryMessenger, "plugins.microprogramers.org/sendSMS", JSONMethodCodec.INSTANCE)
 
-    this.removeSmsChannel = MethodChannel(flutterPluginBinding.binaryMessenger, "elyudde.sms.remove.channel")
+    this.removeSmsChannel = MethodChannel(flutterPluginBinding.binaryMessenger, "microprogramers.sms.remove.channel")
 
     this.querySmsChannel = MethodChannel(flutterPluginBinding.binaryMessenger, "plugins.microprogramers.org/querySMS", JSONMethodCodec.INSTANCE)
 

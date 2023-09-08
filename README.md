@@ -1,4 +1,4 @@
-# sms_plugin
+# sms_plugin_mp
 <a href="https://www.buymeacoffee.com/MubasharHussain" target="_blank"><img src="https://i.imgur.com/aV6DDA7.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important; box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" > </a>
 
 This is an SMS library for Flutter.
@@ -8,7 +8,7 @@ This is an SMS library for Flutter.
 
 ### Installation and Usage
 
-Once you're familiar with Flutter you may install this package adding `sms_plugin` (0.0.1 or higher) to the dependencies list of the `pubspec.yaml` file as follow:
+Once you're familiar with Flutter you may install this package adding `sms_plugin_mp` (0.0.2 or higher) to the dependencies list of the `pubspec.yaml` file as follow:
 
 ```yaml
 ...
@@ -16,7 +16,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  sms_plugin: ^0.0.1
+  sms_plugin_mp: ^0.0.2
 ...
 ```
 
@@ -24,10 +24,10 @@ Then run the command `flutter packages get` on the console.
 
 ## Querying SMS messages
 
-Add the import statement for `sms_plugin` and create an instance of the *SmsQuery* class:
+Add the import statement for `sms_plugin_mp` and create an instance of the *SmsQuery* class:
 
 ```dart
-import 'package:sms_plugin/sms_plugin.dart';
+import 'package:sms_plugin_mp/sms_plugin.dart';
 
 void main() {
   SmsQuery query = new SmsQuery();
@@ -84,10 +84,10 @@ List<SmsThread> threads = await query.getAllThreads;
 
 Each conversation thread is related with a Contact. 
 The class `Contact` contains all the info of a thread contact (address, photo, full name).
-To get access to `Contact` class you must import `'package:sms_plugin/contact.dart'` into your dart file:
+To get access to `Contact` class you must import `'package:sms_plugin_mp/contact.dart'` into your dart file:
 
 ```dart
-import 'package:sms_plugin/contact.dart';
+import 'package:sms_plugin_mp/contact.dart';
 
 void main() {
   ...
@@ -101,7 +101,7 @@ void main() {
 You can also query a contact by its address _(phone number)_:
 
 ```dart
-import 'package:sms_plugin/contact.dart';
+import 'package:sms_plugin_mp/contact.dart';
 
 void main() {
   ContactQuery contacts = new ContactQuery();
@@ -126,7 +126,7 @@ Uint8List thumbnail = contact.thumbnail.bytes;
 Some times it is useful to request basic info of the phone owner, like the contact photo, addresses, etc.
 
 ```dart
-import 'package:sms_plugin/contact.dart';
+import 'package:sms_plugin_mp/contact.dart';
 
 UserProfileProvider provider = new UserProfileProvider();
 UserProfile profile = await provider.getUserProfile();
@@ -138,7 +138,7 @@ print(profile.fullName);
 What about sending a SMS? All you have to do is to create an instance of the `SmsSender` class:
 
 ```dart
-import 'package:sms_plugin/sms_plugin.dart';
+import 'package:sms_plugin_mp/sms_plugin.dart';
 
 void main() {
   SmsSender sender = new SmsSender();
@@ -151,7 +151,7 @@ void main() {
 To be notified when the message is sent and/or delivered, you must add a listener to your message:
 
 ```dart
-import 'package:sms_plugin/sms_plugin.dart';
+import 'package:sms_plugin_mp/sms_plugin.dart';
 
 void main() {
   SmsSender sender = new SmsSender();
@@ -199,7 +199,7 @@ sender.sendSMS(message, simCard: card);
 If you want to be notified for incoming new messages you must subscribe to an instance of the `SmsReceiver` class:
 
 ```dart
-import 'package:sms_plugin/sms_plugin.dart';
+import 'package:sms_plugin_mp/sms_plugin.dart';
 
 void main() {
   SmsReceiver receiver = new SmsReceiver();
@@ -214,7 +214,7 @@ Only deleting one by one is available. Don't forget to make your sms app the def
 
 
 ```dart
-import 'package:sms_plugin/sms_plugin.dart';
+import 'package:sms_plugin_mp/sms_plugin.dart';
 
 void main() {
 SmsRemover smsRemover = SmsRemover();
@@ -242,7 +242,7 @@ SmsRemover smsRemover = SmsRemover();
 
 ### Activity Changes
 
-Note that `sms_plugin` requires the use of a `FragmentActivity` instead of an
+Note that `sms_plugin_mp` requires the use of a `FragmentActivity` instead of an
 `Activity`. To update your application:
 
 * If you are using `FlutterActivity` directly, change it to

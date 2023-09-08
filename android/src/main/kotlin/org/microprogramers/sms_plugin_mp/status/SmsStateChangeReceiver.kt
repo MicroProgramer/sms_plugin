@@ -1,4 +1,4 @@
-package org.microprogramers.sms_plugin.status
+package org.microprogramers.sms_plugin_mp.status
 
 import android.annotation.TargetApi
 import android.app.Activity

@@ -1,4 +1,4 @@
-package org.microprogramers.sms_plugin.status
+package org.microprogramers.sms_plugin_mp.status
 
 import android.Manifest
 import android.annotation.TargetApi
@@ -7,7 +7,7 @@ import android.content.Context
 import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.os.Build
-import org.microprogramers.sms_plugin.permisions.Permissions
+import org.microprogramers.sms_plugin_mp.permisions.Permissions
 import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
 import io.flutter.plugin.common.EventChannel

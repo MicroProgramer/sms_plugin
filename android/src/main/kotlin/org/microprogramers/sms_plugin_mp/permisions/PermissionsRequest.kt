@@ -1,4 +1,4 @@
-package org.microprogramers.sms_plugin.permisions
+package org.microprogramers.sms_plugin_mp.permisions
 
 import android.annotation.TargetApi
 import androidx.fragment.app.FragmentActivity

@@ -1,4 +1,4 @@
-package org.microprogramers.sms_plugin.telephony
+package org.microprogramers.sms_plugin_mp.telephony
 
 import android.annotation.TargetApi
 import android.content.Context

@@ -1,6 +1,5 @@
-package android
 
-group 'org.microprogramers.sms_plugin'
+group 'org.microprogramers.sms_plugin_mp'
 version '1.0-SNAPSHOT'
 
 buildscript {

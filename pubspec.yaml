@@ -1,13 +1,13 @@
-name: sms_plugin
+name: sms_plugin_mp
 description: This is an SMS library for Flutter. Its allow to send, receive,
   query sms messages, sms delivery and query contacts info in Android, and only
   sending in IOS & Web.
-version: 0.0.1
-homepage: https://github.com/MicroProgramer/sms_plugin
+version: 0.0.2
+homepage: https://github.com/MicroProgramer/sms_plugin_mp
 
 environment:
   sdk: ">=2.12.0 <4.0.0"
-  flutter: ">=1.20.0"
+  flutter: ">=2.20.0"
 
 dependencies:
   flutter:
@@ -29,10 +29,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: org.microprogramers.sms_plugin
+        package: org.microprogramers.sms_plugin_mp
         pluginClass: SmsAdvancedPlugin
       ios:
         pluginClass: UssdAdvancedPlugin
       web:
         pluginClass: SmsAdvancedPlugin
-        fileName: sms_plugin_web.dart
+        fileName: sms_plugin_mp_web.dart

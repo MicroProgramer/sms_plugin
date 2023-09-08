@@ -1,3 +1,2 @@
-package android
 
-rootProject.name = 'sms_plugin'
+rootProject.name = 'sms_plugin_mp'
